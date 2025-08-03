@@ -25,7 +25,7 @@ def fetch_stock_data(ticker: str) -> dict:
         return {"error": str(e)}
 
 # === Streamlit UI ===
-st.set_page_config(page_title="Financial Report Generator", layout="wide")
+st.set_page_config(page_title="Financial Report Generator for tickers", layout="wide")
 st.title(" ===== Financial Insights Generation with AutoGen ==== ")
 tickers = st.text_input("Enter stock tickers (comma-separated):")
 run = st.button("Run Analysis")
